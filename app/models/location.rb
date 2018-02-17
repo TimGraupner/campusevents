@@ -1,5 +1,6 @@
 class Location < ApplicationRecord
 
- validates :name, presence:true
+  has_many :meetings
+  validates :name, presence:true
 
 end

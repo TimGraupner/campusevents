@@ -1,5 +1,8 @@
 class Meeting < ApplicationRecord
 
+  belongs_to :location
+  belongs_to :event
+
   validate :end_after_start
   validates :name, :start_time, :end_time, presence:true
 
